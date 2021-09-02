@@ -43,8 +43,8 @@
                 width:90%; display: block; margin:0px auto; padding:0; height:500px; ;
             }
             div#slideshow div#slide_content{
-                color:orange; font-size:30px; font-family:monospace; font-style:italic; font-weight:bold; 
-                margin:-60px 0 0 30px; text-align:center;
+                color:orange; font-size:25px; font-family:Tahoma; font-style:italic; font-weight:bold; 
+                margin:-80px 0 0 30px; text-align:center;
             }
             div#content{
                 display: grid; padding:10px; grid-template-columns: 1fr 1fr 1fr; column-gap: 30px;
@@ -96,6 +96,10 @@
             footer p{text-align: center;}
 
             /* media query for small device */
+             @media screen and (max-width:767px){
+                header nav ul li.active,header nav ul li#about{display: none;}
+            }
+            
             @media screen and (max-width:767px){
                 div#slideshow{
                     margin-top:70px; height:350px; background: black;
@@ -107,7 +111,7 @@
                     display: block;
                 }
                 div#case{
-                    border:3px solid lightgray; border-radius: 20px; height:400px; width:80%; 
+                    border:3px solid lightgray; border-radius: 20px; height:250px; width:80%; 
                     margin-left:auto; margin-right: auto;
                 }
             }
@@ -122,7 +126,7 @@
                     <ul>
                         <li class="active"> HOME </li>
                         <li> CONTACT US </li>
-                        <li> ABOUT US </li>
+                        <li id="about"> ABOUT US </li>
                     </ul>
                 </nav>
             </div>
